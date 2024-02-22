@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gh2u
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0062-tenant/tkrw-pr712-0075-0062-app/devfile-sample-gh2u@sha256:6eff234c9a5c3799faa9b8e22ce6953ba7d114c523e968e5794c8820cdbcfec7
+        name: my-nodejs
+        resources: {}
+status: {}
